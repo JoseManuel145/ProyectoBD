@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="382.0" prefWidth="640.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="manuel.cruz.demoproyecto.controllers.MenuController">
+    <Pane prefHeight="71.0" prefWidth="640.0" style="-fx-background-color: #5A606F;">
+        <Text fill="WHITE" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO"
+              textAlignment="CENTER" wrappingWidth="640.0">
+            <font>
+                <Font size="34.0"/>
+            </font>
+        </Text>
+    </Pane>
+    <ImageView fitHeight="336.0" fitWidth="640.0" layoutY="71.0" pickOnBounds="true">
+        <Image url="@img/pantalla-menu.jpg"/>
+    </ImageView>
+    <Button fx:id="ticketsButton" onMouseClicked="#onMouseClickedTicketButton" layoutX="248.0" layoutY="280.0"
+            mnemonicParsing="false" prefHeight="45.0" prefWidth="183.0"
+            style="-fx-background-color: orange; -fx-border-color: black;" text="Historial de tickets"
+            textFill="WHITE"/>
+    <Button fx:id="inventarioButton" onMouseClicked="#onMouseClickedInventarioButton" layoutX="431.0" layoutY="172.0"
+            mnemonicParsing="false" prefHeight="55.0" prefWidth="130.0"
+            style="-fx-background-color: orange; -fx-border-color: black;" text="Inventario" textFill="WHITE"/>
+    <Button fx:id="ventaButton" onMouseClicked="#onMouseClickedVentaButton" layoutX="111.0" layoutY="176.0"
+            mnemonicParsing="false" prefHeight="55.0" prefWidth="137.0"
+            style="-fx-background-color: orange; -fx-border-color: black;" text="Ventas" textFill="WHITE"/>
+</AnchorPane>
