@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manuel.cruz.demoproyecto.controllers.venta.DeleteSaleController">
+    <Pane prefHeight="57.0" prefWidth="648.0" style="-fx-background-color: #5A606F;">
+        <Text fill="WHITE" layoutX="-4.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ELIMINAR PRODUCTO DE VENTA" textAlignment="CENTER" wrappingWidth="656.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+    </Pane>
+    <Pane layoutX="-8.0" layoutY="372.0" prefHeight="28.0" prefWidth="656.0" style="-fx-background-color: #5A606F;" />
+    <Label alignment="CENTER" layoutX="213.0" layoutY="101.0" prefHeight="57.0" prefWidth="85.0" style="-fx-background-color: gray; -fx-border-color: black;" text="ID:" textFill="WHITE" />
+    <Button fx:id="volverButton" onMouseClicked="#onMouseClickedVolverButton" layoutX="401.0" layoutY="228.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="118.0" style="-fx-background-color: gray; -fx-border-color: black;" text="VOLVER ATRAS" textFill="WHITE" />
+    <Button fx:id="elimPVentaButton" onMouseClicked="#onMouseClickedEliminarButton" layoutX="180.0" layoutY="228.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="118.0" style="-fx-background-color: gray; -fx-border-color: black;" text="ELIMINAR" textFill="WHITE" />
+    <TextField fx:id="txtElimId" layoutX="311.0" layoutY="117.0" />
+</AnchorPane>

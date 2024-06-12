@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="404.0" prefWidth="684.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manuel.cruz.demoproyecto.controllers.venta.SaleController">
+   <Pane layoutY="-4.0" prefHeight="66.0" prefWidth="713.0" style="-fx-background-color: #5A606F;">
+      <Text fill="WHITE" layoutX="76.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENTA" textAlignment="CENTER" wrappingWidth="572.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </Pane>
+   <Pane layoutY="376.0" prefHeight="28.0" prefWidth="713.0" style="-fx-background-color: #5A606F;" />
+   <Button fx:id="agregPButton" layoutX="9.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedAgregarButton" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: gray; -fx-border-color: black;" text="AGREGAR PRODUCTO" textFill="WHITE" />
+   <Button fx:id="elimPButton" layoutX="170.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedEliminarButton" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: gray; -fx-border-color: black;" text="ELIMINAR PRODUCTO" textFill="WHITE" />
+   <Button fx:id="volverButton" layoutX="331.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedVolverButton" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-border-color: black;" text="VOLVER ATRAS" textFill="WHITE" />
+   <Button fx:id="venderButton" layoutX="469.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedVenderButton" prefHeight="43.0" prefWidth="97.0" style="-fx-background-color: gray; -fx-border-color: black;" text="VENDER" textFill="WHITE" />
+   <ListView fx:id="productosVender" layoutX="443.0" layoutY="84.0" prefHeight="168.0" prefWidth="263.0" style="-fx-border-color: black;" />
+   <Text layoutX="539.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" wrappingWidth="58.19531998038292">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <Text layoutX="646.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRECIO">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <AnchorPane layoutY="62.0" prefHeight="184.0" prefWidth="328.0">
+      <ImageView fitHeight="249.0" fitWidth="432.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../img/venta.jpg" />
+      </ImageView>
+   </AnchorPane>
+   <Label fx:id="cajaTotal" layoutX="589.0" layoutY="261.0" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: white; -fx-border-color: black;" text="Total : $">
+      <font>
+         <Font name="Times New Roman" size="15.0" />
+      </font>
+   </Label>
+   <Button fx:id="actualizarButton" layoutX="448.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedActualizarButton" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: gray; -fx-border-color: black;" text="ACTUALIZAR" textFill="WHITE" />
+   <Text layoutX="476.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="58.19531998038292">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <TextField fx:id="txtDineroIngreso" layoutX="589.0" layoutY="310.0" prefHeight="34.0" prefWidth="114.0" promptText="DINERO" style="-fx-border-color: black; -fx-background-color: white;">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </TextField>
+</AnchorPane>
